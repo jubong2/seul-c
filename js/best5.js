@@ -17,13 +17,11 @@ window.addEventListener("load", function () {
     spaceBetween: 10,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
     },
-    breakpoints: {
-      1200: { slidesPerView: 2.5 },
-      800: { slidesPerView: 2 },
-      600: { slidesPerView: 2, spaceBetween: 20 },
+    on: {
+      loop: true, // 루프 활성화
     },
+    breakpoints: { 1200: { slidesPerView: 3.5 }, 700: { slidesPerView: 3 } },
     on: {
       loop: true,
     },

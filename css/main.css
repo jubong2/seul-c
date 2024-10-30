@@ -16,7 +16,7 @@
 @import url("productPage.css");
 @import url("font.css");
 @import url("popupModal.css");
-
+@import url("time-sale.css");
 
 * {
   margin: 0;
@@ -62,7 +62,9 @@ img {
   .best5 {
     margin-bottom: 180px;
   }
-
+  .time-sale {
+    margin-bottom: 200px;
+  }
   .popup-store {
     margin-bottom: 200px;
   }
@@ -94,8 +96,14 @@ img {
   .best5 {
     margin-bottom: 120px;
   }
+  .time-sale {
+    margin-bottom: 150px;
+  }
 
   .popup-store {
+    margin-bottom: 150px;
+  }
+  .time-sale {
     margin-bottom: 150px;
   }
 
@@ -128,6 +136,12 @@ img {
     width: 80%;
   }
 
+  .time-sale {
+    margin-bottom: 80px;
+  }
+  .time-sale-inner {
+    width: 80%;
+  }
   .popup-store {
     margin-bottom: 80px;
   }
