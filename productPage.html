@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 구글 애널리틱스  -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MXNJDZBK");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>슬기로운 빵생활</title>
+    <!-- SEO적용 -->
+    <meta name="description" content="전국 빵순이 빵순이들 모여라!! 전국 빵맛집을 한번에! " />
+    <meta name="keywords" content="빵맛집, 전국빵맛집, 빵지순례, 빵투어, 빵맛있는곳, 디저트, 디저트추천, 빵추천, 베이커리, 빵택배 , 빵택배배송" />
+    <meta name="author" content="슬기로운빵생활" />
+    <meta property="og:title" content="슬기로운빵생활" />
+    <meta property="og:description" content="전국 빵집 모음! " />
+    <meta property="og:image" content="https://seulppang-t7we.vercel.app/images/logo.png" />
+    <meta property="og:url" content="https://seulppang-t7we.vercel.app/" />
+    <meta property="og:site_name" content="seulppang[슬기로운빵생활]" />
+    <meta property="og:type" content="website" />
+    <!-- 파비콘 적용 -->
+    <link rel="icon" href="images/favicon.png" />
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 구글 폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <!-- ---------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <!-- *제이쿼리 연결은 제일 위쪽* -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <!-- AOS적용 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <script src="js/html5shiv.js"></script>
+
+    <!--  prefixfree 주석했다가 나중에 풀기-->
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/respond.min.js"></script>
+
+    <!-- 스와이퍼 -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- js -->
+    <script src="js/subpage.js"></script>
+    <script src="js/detailpage.js"></script>
+    <script src="js/best5.js"></script>
+    <script src="js/community.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/minibanner.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/productPage.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53RQ74E4K0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-53RQ74E4K0");
+    </script>
+  </head>
+  <body>
+    <div class="fix-menu">
+      <ul class="fix-list">
+        <li>
+          <a href="loginpage.html" class="fix-login">
+            <span class="logintext">로그인</span>
+            <img src="images/log-in.png" alt="로그인아이콘" />
+          </a>
+        </li>
+
+        <li>
+          <span>최근 본 물품</span>
+          <a href="productPage.html" class="good-recent">
+            <img src="images/party1.jpg" alt="케이크" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fix-qa">
+            <span>상담/문의</span>
+            <img src="images/call.png" alt="문의 아이콘" />
+          </a>
+        </li>
+      </ul>
+      <button class="fix-top">top</button>
+    </div>
+    <div class="mb-header-warp">
+      <div class="mb-header-top-icon">
+        <div>
+          <a href="loginpage.html"><img src="images/login-w.png" alt="로그인" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/heart-w.png" alt="찜하기" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/cart-w.png" alt="로그인" /></a>
+        </div>
+        <div class="closed"><img src="images/closed.png" alt="닫기" /></div>
+      </div>
+      <div class="mb-search">
+        <div class="search-inner">
+          <input type="text" placeholder="검색하기" />
+          <p>search</p>
+        </div>
+      </div>
+      <div class="mb-header">
+        <ul>
+          <li class="mb-header-navi-kind">
+            <a href="#">BEKERY</a>
+            <ul>
+              <li><a href="subpage.html">선물용</a></li>
+              <li><a href="subpage.html">비건</a></li>
+              <li><a href="subpage.html">디저트류</a></li>
+              <li><a href="subpage.html">PET 베이커리</a></li>
+            </ul>
+          </li>
+          <li class="mb-header-navi-kind">
+            <a href="#">POPUP</a>
+          </li>
+          <li class="mb-header-navi-kind">
+            <a href="#">HOT</a>
+            <ul>
+              <li><a href="#">알뜰빵</a></li>
+              <li><a href="#">신상빵</a></li>
+              <li><a href="#">인기빵</a></li>
+            </ul>
+          </li>
+          <li class="mb-header-navi-kind"><a href="#">COMMUNITY</a></li>
+          <li class="mb-header-navi-kind"><a href="#">C/S</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap">
+      <!-- 헤더 -->
+      <section class="header">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="index.html"><img src="images/logo.png" alt="로고" /></a>
+          </div>
+          <div class="search">
+            <div class="search-inner">
+              <input type="text" placeholder="검색하기" />
+              <p>search</p>
+            </div>
+          </div>
+          <div class="header-top-icon">
+            <div>
+              <img src="images/search.png" alt="검색하기" class="search-button" />
+            </div>
+            <div>
+              <a href="loginpage.html"><img src="images/log-in.png" alt="로그인" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="images/heart-header.png" alt="찜하기" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="images/cart-header.png" alt="로그인" /></a>
+            </div>
+          </div>
+          <div class="header-mb-bar">
+            <img src="images/mb-header.png" alt="햄버거바" />
+          </div>
+        </div>
+        <div class="header-bottom">
+          <ul class="header-navi">
+            <li>
+              <a href="#" class="header-navi-title"><h3>BAKERY</h3></a>
+              <div class="header-navi-submenu bakery-submenu">
+                <div>
+                  <ul class="bakery-cate">
+                    <li><a href="subpage.html" class="bakery-cate-inner">선물용</a></li>
+                    <li><a href="subpage.html">비건</a></li>
+                    <li><a href="subpage.html" class="bakery-cate-inner">디저트류</a></li>
+                    <li><a href="subpage.html" class="bakery-cate-inner">식사류</a></li>
+                    <li><a href="subpage.html">PET 베이커리</a></li>
+                  </ul>
+                  <div class="bakery-inner">
+                    <ul class="navi-gift">
+                      <li><a href="subpage.html">생일케이크</a></li>
+                      <li><a href="subpage.html">롤케이크</a></li>
+                      <li><a href="subpage.html">선물세트</a></li>
+                    </ul>
+                    <ul></ul>
+                    <ul class="navi-dessert">
+                      <li><a href="subpage.html">스콘</a></li>
+                      <li><a href="subpage.html">휘낭시에</a></li>
+                      <li><a href="subpage.html">쿠키</a></li>
+                      <li><a href="subpage.html">타르트</a></li>
+                    </ul>
+                    <ul class="navi-meal">
+                      <li><a href="subpage.html">식빵</a></li>
+                      <li><a href="subpage.html">베이글</a></li>
+                      <li><a href="subpage.html">바게트</a></li>
+                      <li><a href="subpage.html">치아바타</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="header-navi-title"><h3>POPUP</h3></a>
+            </li>
+            <li>
+              <div>
+                <a href="#" class="header-navi-title"><h3>HOT</h3></a>
+                <ul class="header-navi-submenu">
+                  <li><a href="#">알뜰빵</a></li>
+                  <li><a href="#">신상빵</a></li>
+                  <li><a href="#">인기빵</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="header-navi-title"><h3>COMMUNITY</h3></a>
+            </li>
+            <li>
+              <a href="#" class="header-navi-title"><h3>C/S</h3></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 상품 영역 -->
+      <div class="product">
+        <div class="product-inner">
+          <!-- 상품 위에 담기 부분 -->
+          <div class="product-cart">
+            <div class="main-img-left">
+              <img src="images/party1.jpg" alt="" />
+            </div>
+            <div class="product-intro-right">
+              <div class="title">
+                <h3>
+                  <span>[달랩]</span> <br />
+                  미니 파스텔 초코케이크
+                </h3>
+                <h4>25,900원</h4>
+              </div>
+
+              <div class="option">
+                <label for="size">상품선택</label>
+                <select name="size" id="size">
+                  <option value="size1" data-price="25900" data-name="Size 1">Size 1 : 15cm</option>
+                  <option value="size2" data-price="31000" data-name="Size 2">Size 2 : 20cm</option>
+                </select>
+              </div>
+
+              <!-- 옵션 박스 -->
+              <div id="selected-option" class="option-box">
+                <button class="close-btn">X</button>
+                <p id="selected-product-name"></p>
+                <p id="selected-product-price"></p>
+
+                <div class="quantity-selector">
+                  <p>수량 :</p>
+                  <button id="decrease-btn">-</button>
+                  <input type="text" id="quantity" value="1" readonly />
+                  <button id="increase-btn">+</button>
+                </div>
+
+                <p id="total-price"></p>
+              </div>
+
+              <div class="cart-btn">
+                <button id="add-to-cart">장바구니 담기</button>
+              </div>
+            </div>
+          </div>
+          <!-- 카테고리 버튼 -->
+          <div class="category-btn">
+            <ul>
+              <li><a href="#productIntro-btn">상품설명</a></li>
+              <li><a href="#productIntro-btn">상세정보</a></li>
+              <li><a href="#review-btn">후기</a></li>
+              <li><a href="#qna-btn">문의하기</a></li>
+            </ul>
+          </div>
+          <!-- 상품 상세 소개 영역 -->
+          <div id="detail" class="hidden">
+            <img src="images/product-intro.png" alt="상품상세이미지" id="productIntro-btn" />
+          </div>
+          <div class="detailMore">
+            <a id="btnMore" href="javascript:moreDetail();">더보기</a>
+          </div>
+
+          <!-- 상품 후기 영역 -->
+          <div class="review-container" id="review-btn">
+            <h2>상품 후기</h2>
+            <div class="review-imgs">
+              <img src="images/review-img/review-1.JPG" alt="상품 후기 1" />
+              <img src="images/review-img/review-2.JPG" alt="상품 후기 2" />
+              <img src="images/review-img/review-3.JPG" alt="상품 후기 3" />
+              <img src="images/review-img/review-4.JPG" alt="상품 후기 4" />
+              <img src="images/review-img/review-5.JPG" alt="상품 후기 5" />
+              <img src="images/review-img/review-6.JPG" alt="상품 후기 6" />
+              <img src="images/review-img/review-7.JPG" alt="상품 후기 7" />
+              <img src="images/review-img/review-8.JPG" alt="상품 후기 4" />
+              <img src="images/review-img/review-9.JPG" alt="상품 후기 5" />
+              <button id="btnMore2">
+                <img src="images/review-img/reviewMore-btn.png" alt="" />
+              </button>
+            </div>
+
+            <!-- 모달창 -->
+            <div id="imageModal" class="modal">
+              <span class="close">&times;</span>
+              <div class="modal-content">
+                <div class="modal-images">
+                  <img src="images/review-img/review-8.JPG" alt="상품 후기 1" />
+                  <img src="images/review-img/review-9.JPG" alt="상품 후기 2" />
+                  <img src="images/review-img/review-10.JPG" alt="상품 후기 3" />
+                  <img src="images/review-img/review-11.JPG" alt="상품 후기 4" />
+                  <img src="images/review-img/review-12.JPG" alt="상품 후기 5" />
+                  <img src="images/review-img/review-15.JPG" alt="상품 후기 6" />
+                  <img src="images/review-img/review-14.JPG" alt="상품 후기 7" />
+                  <img src="images/review-img/review-8.JPG" alt="상품 후기 1" />
+                  <img src="images/review-img/review-9.JPG" alt="상품 후기 2" />
+                  <img src="images/review-img/review-10.JPG" alt="상품 후기 3" />
+                  <img src="images/review-img/review-11.JPG" alt="상품 후기 4" />
+                  <img src="images/review-img/review-12.JPG" alt="상품 후기 5" />
+                  <img src="images/review-img/review-15.JPG" alt="상품 후기 6" />
+                  <img src="images/review-img/review-14.JPG" alt="상품 후기 7" />
+                  <img src="images/review-img/review-11.JPG" alt="상품 후기 4" />
+                  <img src="images/review-img/review-12.JPG" alt="상품 후기 5" />
+                  <img src="images/review-img/review-15.JPG" alt="상품 후기 6" />
+                  <img src="images/review-img/review-14.JPG" alt="상품 후기 7" />
+                </div>
+              </div>
+            </div>
+
+            <div class="review-header">
+              <p>총 145건</p>
+            </div>
+
+            <div class="reviews">
+              <div class="reviews" id="reviewsContainer">
+                <!-- 리뷰 아이템들을 여기에 추가 -->
+                <div class="review-item">
+                  <h3>미니 파스텔 호호케이크 - size 1</h3>
+                  <p class="review-author">작성자: ****님</p>
+                  <p class="review-date">2024.06.26</p>
+                  <h4 class="review-content">케이크가 너무 귀여워서 감동했어요! 포장도 꼼꼼했고 시트가 부드러워서 맛있게 먹었어요~</h4>
+                  <img src="images/review-img/review-1.JPG" alt="후기 이미지 1" />
+                </div>
+
+                <div class="review-item">
+                  <h3>미니 파스텔 호호케이크 - size 1</h3>
+                  <p class="review-author">작성자: **님</p>
+                  <p class="review-date">2024.10.26</p>
+                  <h4 class="review-content">예쁘고 정성도 많이 들어가 있어서 만족합니다.</h4>
+                  <img src="images/review-img/review-2.JPG" alt="후기 이미지 2" />
+                  <img src="images/review-img/review-12.JPG" alt="후기 이미지 1" />
+                </div>
+                <div class="review-item">
+                  <h3>미니 파스텔 호호케이크 - size 2</h3>
+                  <p class="review-author">작성자: **님</p>
+                  <p class="review-date">2024.10.26</p>
+                  <h4 class="review-content">생각보다 퀄리티 좋고 맛까지 있어요..! 급할 때 강추</h4>
+                  <img src="images/review-img/review-3.JPG" alt="후기 이미지 2" />
+                </div>
+                <div class="review-item">
+                  <h3>미니 파스텔 호호케이크 - size 1</h3>
+                  <p class="review-author">작성자: **님</p>
+                  <p class="review-date">2024.10.26</p>
+                  <h4 class="review-content">남편 생일이라 구매해 봤는데 시트가 너무 축축?한 느낌이라 좀 아쉬워요</h4>
+                  <img src="images/review-img/review-4.JPG" alt="후기 이미지 2" />
+                </div>
+                <div class="review-item">
+                  <h3>미니 파스텔 호호케이크 - size 2</h3>
+                  <p class="review-author">작성자: **님</p>
+                  <p class="review-date">2024.10.26</p>
+                  <h4 class="review-content">완전 촉촉하고 맛있어서 무슨 날이 아니더라도 사먹고 싶네요 ^^</h4>
+                  <img src="images/review-img/review-5.JPG" alt="후기 이미지 2" />
+                  <img src="images/review-img/review-6.JPG" alt="후기 이미지 2" />
+                </div>
+                <div class="review-item">
+                  <h3>미니 파스텔 호호케이크 - size 1</h3>
+                  <p class="review-author">작성자: **님</p>
+                  <p class="review-date">2024.10.26</p>
+                  <h4 class="review-content">같이 오는 초도 넘 귀엽고 배송도 빨라서 좋았어용</h4>
+                  <img src="images/review-img/review-7.JPG" alt="후기 이미지 2" />
+                </div>
+              </div>
+
+              <div id="pagination">
+                <button id="prevBtn" disabled>이전</button>
+                <span id="pageInfo">1 / 2</span>
+                <button id="nextBtn">다음</button>
+              </div>
+            </div>
+          </div>
+          <!-- 문의게시판 -->
+          <div class="qna" id="qna-btn">
+            <div class="qna-inner">
+              <h2>상품문의</h2>
+              <p>- 상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</p>
+              <p>- 배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 슬기로운빵생활 내1:1문의에 남겨주세요.</p>
+
+              <div class="qna-container">
+                <table class="qnas">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>제목</th>
+                      <th>작성자</th>
+                      <th>작성일</th>
+                    </tr>
+                  </thead>
+                  <tbody id="qna-noticeList">
+                    <!-- js출력 -->
+                  </tbody>
+                </table>
+                <!-- 페이지네이션 버튼 -->
+                <ul class="qna-pagination" id="qna-pagination">
+                  <!-- js출력 -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 푸터 -->
+        <section class="footer">
+          <div class="inner">
+            <ul class="footer-list">
+              <li>
+                <span>상호 : ㈜슬기로운빵생활<em class="footer-bar"></em></span>
+
+                <span>통신판매업신고번호 : 제2018-서울서대문-0301호<em class="footer-bar"></em></span>
+
+                <span>사업자등록번호 : 121-81-66458</span>
+              </li>
+              <li>
+                고객센터 : <a href="tel:000-0000">1566-9070</a> (운영시간 9:00~18:00,<br class="footer-br" />
+                주말/공휴일/점심 12:00~13:00 제외)
+              </li>
+              <li><p>Copyright © SEUNGHYUN LEE. Allright Reserved.</p></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      // 더보기/접기 버튼 기능
+      $("#btnMore").on("click", function () {
+        $("#detail").toggleClass("show"); // 클래스 토글
+        if ($("#detail").hasClass("show")) {
+          $(this).text("접기"); // 버튼 텍스트 변경
+        } else {
+          $(this).text("더보기"); // 기본 텍스트로 복귀
+        }
+      });
+
+      const $modal = $("#imageModal");
+      const $btnMore = $("#btnMore2");
+      const $spanClose = $(".close");
+
+      // "더보기" 버튼 클릭 시 모달 열기
+      $btnMore.on("click", function () {
+        $modal.show(); // 모달 열기
+      });
+
+      // 닫기 버튼 클릭 시 모달 닫기
+      $spanClose.on("click", function () {
+        $modal.hide(); // 모달 닫기
+      });
+
+      // 모달 외부 클릭 시 모달 닫기
+      $(window).on("click", function (event) {
+        if ($(event.target).is($modal)) {
+          $modal.hide(); // 모달 외부 클릭 시 닫기
+        }
+      });
+      // ================================================
+      const reviewsPerPage = 5; // 한 페이지에 표시할 리뷰 수
+      let currentPage = 1;
+      const reviews = [
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "abs123",
+          date: "2024.10.26",
+          content: "케이크가 너무 귀여워서 감동했어요! 포장도 꼼꼼했고 시트가 부드러워서 맛있게 먹었어요~",
+          img: "images/review-img/review-1.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "qqq002",
+          date: "2024.10.26",
+          content: "예쁘고 정성도 많이 들어가 있어서 만족합니다.",
+          img: "images/review-img/review-2.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "soheemom12",
+          date: "2024.10.24",
+          content: "생각보다 퀄리티 좋고 맛까지 있어요..! 급할 때 강추",
+          img: "images/review-img/review-3.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "ddang99",
+          date: "2024.10.21",
+          content: "남편 생일이라 구매해 봤는데 시트가 너무 축축?한 느낌이라 좀 아쉬워요",
+          img: "images/review-img/review-4.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "lovin89",
+          date: "2024.10.21",
+          content: "완전 촉촉하고 맛있어서 무슨 날이 아니더라도 사먹고 싶네요 ^^",
+          img: "images/review-img/review-5.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "asd445",
+          date: "2024.10.21",
+          content: "같이 오는 초도 넘 귀엽고 배송도 빨라서 좋았어용",
+          img: "images/review-img/review-6.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "ksdfjd33",
+          date: "2024.10.19",
+          content: "생일파티때 필요해서 급하게 시켰는데 너무 만족해요",
+          img: "images/review-img/review-7.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "hio9337",
+          date: "2024.10.19",
+          content: "맛도 좋고 퀄리티도 좋은데 사이즈가 넘 작아서 아숩 ㅠㅜ",
+          img: "images/review-img/review-8.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "gfg5532",
+          date: "2024.10.15",
+          content: "급하게 시킨거라 맛은 기대 안 했는데 너무 맛있네요..!",
+          img: "images/review-img/review-9.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "seung9090",
+          date: "2024.10.15",
+          content: "배송 꼼꼼하고 빨라서 좋아요~~",
+          img: "images/review-img/review-10.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "leeom980",
+          date: "2024.10.21",
+          content: "같이 오는 초도 넘 귀엽고 배송도 빨라서 좋았어용",
+          img: "images/review-img/review-11.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "g8g8g8",
+          date: "2024.10.19",
+          content: "생일파티때 필요해서 급하게 시켰는데 너무 만족해요",
+          img: "images/review-img/review-12.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "sola653",
+          date: "2024.10.19",
+          content: "맛도 좋고 퀄리티도 좋은데 사이즈가 넘 작아서 아숩 ㅠㅜ",
+          img: "images/review-img/review-13.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "jfgh056",
+          date: "2024.10.15",
+          content: "급하게 시킨거라 맛은 기대 안 했는데 너무 맛있네요..!",
+          img: "images/review-img/review-14.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "fdjgf44",
+          date: "2024.10.15",
+          content: "배송 꼼꼼하고 빨라서 좋아요~~",
+          img: "images/review-img/review-15.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "tioy44568",
+          date: "2024.10.21",
+          content: "같이 오는 초도 넘 귀엽고 배송도 빨라서 좋았어용",
+          img: "images/review-img/review-6.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "fkgjdu745",
+          date: "2024.10.19",
+          content: "생일파티때 필요해서 급하게 시켰는데 너무 만족해요",
+          img: "images/review-img/review-7.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "njhu8975",
+          date: "2024.10.19",
+          content: "맛도 좋고 퀄리티도 좋은데 사이즈가 넘 작아서 아숩 ㅠㅜ",
+          img: "images/review-img/review-8.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 2",
+          author: "dkfjsi2",
+          date: "2024.10.15",
+          content: "급하게 시킨거라 맛은 기대 안 했는데 너무 맛있네요..!",
+          img: "images/review-img/review-9.JPG",
+        },
+        {
+          title: "미니 파스텔 호호케이크 - size 1",
+          author: "klyho00",
+          date: "2024.10.15",
+          content: "배송 꼼꼼하고 빨라서 좋아요~~",
+          img: "images/review-img/review-10.JPG",
+        },
+
+        // 여기에 추가 리뷰를 계속 나열...
+      ];
+
+      function renderReviews(page) {
+        $("#reviewsContainer").empty(); // 기존 리뷰 초기화
+        const start = (page - 1) * reviewsPerPage;
+        const end = Math.min(start + reviewsPerPage, reviews.length);
+
+        for (let i = start; i < end; i++) {
+          const review = reviews[i];
+          $("#reviewsContainer").append(`
+                <div class="review-item">
+                    <h3>${review.title}</h3>
+                    <p class="review-date">${review.date}</p>
+                    <h4 class="review-content">${review.content}</h4>
+                    <p class="review-author">아이디: ${review.author}</p>
+                    
+                    <img src="${review.img}" alt="후기 이미지 ${i + 1}" />
+                </div>
+            `);
+        }
+
+        // 페이지네이션 버튼 활성화 상태 업데이트
+        $("#prevBtn").prop("disabled", page === 1);
+        $("#nextBtn").prop("disabled", end === reviews.length);
+        $("#pageInfo").text(`${page} / ${Math.ceil(reviews.length / reviewsPerPage)}`);
+      }
+
+      // 이전 버튼 클릭
+      $("#prevBtn").click(function () {
+        if (currentPage > 1) {
+          currentPage--;
+          renderReviews(currentPage);
+        }
+      });
+
+      // 다음 버튼 클릭
+      $("#nextBtn").click(function () {
+        if (currentPage < Math.ceil(reviews.length / reviewsPerPage)) {
+          currentPage++;
+          renderReviews(currentPage);
+        }
+      });
+
+      // 초기 리뷰 렌더링
+      renderReviews(currentPage);
+      // ===============================================================
+      AOS.init();
+      const cartbtn = document.querySelectorAll("#add-to-cart");
+
+      cartbtn.forEach((button) => {
+        button.addEventListener("click", function () {
+          alert("장바구니에 담겼습니다.");
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // const targetNameElement = document.querySelector(".taget-name"); // 클래스명 수정
+      const logintext = document.querySelector(".logintext");
+
+      // 로컬 스토리지에서 username 가져오기
+      const username = localStorage.getItem("username");
+      console.log(username);
+
+      if (username) {
+        // targetNameElement.textContent = username;
+        logintext.textContent = "로그아웃";
+      } else {
+        logintext.textContent = "로그인";
+      }
+    });
+  </script>
+</html>

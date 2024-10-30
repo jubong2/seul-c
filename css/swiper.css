@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* target */
+
+.target-swiper {
+  position: relative;
+  width: 100%;
+  background-color: antiquewhite;
+  margin-bottom: 300px;
+}
+
+.target-warp {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+}
+.swipersection-title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swipersection-title > h4 {
+  margin: 50px 0;
+  width: 80%;
+  font-size: 50px;
+}
+.enter,
+.enter2,
+.enter3 {
+  display: none;
+}
+
+.swiper-more-button {
+  width: 12%;
+}
+.a-more-btn {
+  width: 100%;
+  gap: 5%;
+  align-items: center;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+.a-more-btn > p {
+  text-align: center;
+  width: 100%;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+.swipersection-title .more-btn img {
+  width: 15px;
+}
+
+.targetslide-img {
+  position: relative;
+}
+
+/* 펫 스와이퍼 */
+.pet-swiper {
+  width: 100%;
+
+  /* background: url("../images/pet-bg2.jpg") no-repeat; */
+  background-position: center;
+  background-size: 100%; /* 가로를 전부 맞추고 세로는 자동 */
+  position: relative;
+  background-color: antiquewhite;
+  margin-bottom: 300px;
+}
+.pet-warp {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+}
+.petfoot-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+}
+.petfoot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+.pet-img {
+  position: relative;
+}
+
+/* 반응형 */
+@media (max-width: 1600px) {
+  .swiper-more-button {
+    width: 15%;
+  }
+}
+@media (max-width: 1500px) {
+  .enter {
+    display: block;
+  }
+}
+@media (max-width: 1300px) {
+  .swiper-more-button {
+    width: 20%;
+  }
+  .swiper-more-button > p {
+    font-size: 18px;
+  }
+  .swipersection-title > h4 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .swipersection-title > h4 {
+    width: 70%;
+    font-size: 30px;
+  }
+  .swiper-more-button > p {
+    font-size: 15px;
+  }
+  .swipersection-title .more-btn img {
+    width: 10px;
+  }
+  .enter3 {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .swiper-more-button {
+    width: 25%;
+  }
+}
+@media (max-width: 800px) {
+  .swipersection-title > h4 {
+    font-size: 25px;
+    margin: 25px 0;
+  }
+
+  .enter {
+    display: none;
+  }
+  .enter2 {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .swiper-more-button {
+    width: 30%;
+  }
+}
+@media (max-width: 650px) {
+  .swiper-more-button {
+    /* width: 30%; */
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transform: translateY(-30%);
+  }
+
+  .swipersection-title .more-btn img {
+    width: 5px;
+  }
+
+  .a-more-btn > p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .swipersection-title > h4 {
+    font-size: 18px;
+  }
+
+  .petfoot-top {
+    width: 30%;
+  }
+  .petfoot {
+    width: 30%;
+  }
+}
+
+@media (max-width: 450px) {
+  .swiper-more-button {
+    width: 28%;
+  }
+  .swiper-more-button {
+    display: block;
+  }
+  .a-more-btn > p {
+    margin-top: 3px;
+    font-size: 13px;
+  }
+}
+/*  {
+  .swipersection-title > h4 {
+    padding-top: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .swipersection-title {
+    display: block;
+  }
+  .swiper-more-button {
+    width: 30%;
+    margin-left: 80%;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .swiper-more-button > p {
+    font-size: 8px;
+  }
+  .swipersection-title .more-btn img {
+    width: 5px;
+  }
+} */

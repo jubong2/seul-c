@@ -1,0 +1,436 @@
+@charset "utf-8";
+
+/* 베스트 5 */
+
+.best5 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 280px;
+}
+.best5-inner {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.best5-title {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.best5-product-warp {
+  display: flex;
+  gap: 5%;
+  padding: 2% 3%;
+}
+/* best5 카태고리 버튼 */
+.best5-button {
+  position: relative;
+  display: block;
+  /* width: 25%; */
+}
+
+.best5-button > a {
+  width: 100%;
+  line-height: 2;
+  font-family: "Tenada";
+  font-size: 40px;
+}
+
+.best5-button a h3 {
+  position: relative; /* 상대 위치 지정 */
+  transition: all 0.3s; /* h3 요소에도 트랜지션 적용 */
+}
+
+.best5-button > a > h3::after {
+  content: ""; /* 가상 요소에 내용 추가 */
+  position: absolute; /* 절대 위치 지정 */
+  left: 0; /* 중앙 정렬 */
+  bottom: 0px; /* h3 아래에 위치 */
+  transition: all 1s; /* 가상 요소의 트랜지션 */
+  width: 0%; /* 기본 너비 */
+  border-bottom: #ff8000 solid 3px; /* 경계 스타일 */
+  opacity: 0; /* 기본 상태에서 가리기 */
+}
+
+.best5-button > a.active h3::after {
+  opacity: 1; /* 가시성 */
+  width: 40%; /* 너비 설정 */
+}
+
+/* best5 스와이퍼 */
+.best5-swiper {
+  position: relative;
+  display: block;
+  /* float: right; */
+  width: 80%;
+  height: 100%;
+}
+
+.productimg {
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* 이미지의 크기를 요소에 맞추고 중앙에 배치 */
+  object-position: center; /* 이미지 중심을 가운데로 설정 */
+}
+
+.best5slide {
+  position: relative;
+  width: 100%;
+}
+.best5slide-img {
+  position: relative;
+  width: 100%;
+}
+.best5slide-img > img {
+  width: 100%;
+}
+.best5slide-img > a {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+/*  상품 아이콘  */
+.product-icon {
+  position: absolute;
+  overflow: hidden;
+  width: 80px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 15%;
+  margin: 10px 20px;
+}
+.product-icon > div {
+  width: calc(100% / 2);
+  display: block;
+}
+
+.heart-icon > img {
+  width: 100%;
+}
+
+.cart-icon > img {
+  width: 100%;
+}
+.product-text {
+  cursor: pointer;
+  padding: 20px 0;
+  color: rgba(133, 83, 51, 0.8);
+}
+
+.product-text > a > h3 {
+  height: 50px;
+  font-size: 25px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-text > a > p {
+  height: 50px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* word-break: keep-all; */
+}
+
+.product-text > a > p:nth-child(3) {
+  font-size: 30px;
+}
+/* best content 랭킹 번호 */
+.best5slide:nth-child(1)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "1";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+.best5slide:nth-child(2)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "2";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+.best5slide:nth-child(3)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "3";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+.best5slide:nth-child(4)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "4";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+.best5slide:nth-child(5)::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: "5";
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff8000;
+}
+/* 파티 */
+.gift {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .product-text > a > h3 {
+    height: 40px;
+  }
+  .product-text > a > p {
+    height: 20px;
+  }
+  .product-text > a > p:nth-child(3) {
+    font-size: 30px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .best5-title {
+    font-size: 35px;
+  }
+  .product-text > a > h3 {
+    font-size: 25px;
+  }
+
+  .best5-button > a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .best5-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .product-text > a > p:nth-child(3) {
+    font-size: 25px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-icon {
+    width: 60px;
+  }
+
+  .best5slide:nth-child(1)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .best5slide:nth-child(2)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .best5slide:nth-child(3)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .best5slide:nth-child(4)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .best5slide:nth-child(5)::after {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  .product-text > a > h3 {
+    font-size: 18px;
+    height: 30px;
+  }
+  .product-text > a > p {
+    font-size: 15px;
+    height: 15px;
+  }
+  .product-text > a > p:nth-child(3) {
+    font-size: 18px;
+    height: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .best5-title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .best5-button > a > h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .best5-product-warp {
+    flex-direction: column;
+  }
+
+  .best5-title {
+    margin-bottom: 25px;
+  }
+  .best5-swiper {
+    width: 100%;
+  }
+  .best5-button {
+    display: flex; /* flexbox를 사용해 정렬 */
+    flex-wrap: wrap; /* 요소가 한 줄에 두 개씩 배치되게 하기 위해 줄바꿈 */
+    margin-bottom: 20px;
+    gap: 10px; /* 버튼들 사이의 간격 설정 */
+  }
+  .best5-button > a {
+    width: calc(50% - 5px); /* 버튼 두 개가 한 줄에 들어가도록 50%로 설정, 간격 보정 */
+  }
+  .best5-button > a > h3 {
+    width: 100%;
+    text-align: center;
+    transition: all 1s; /* 가상 요소의 트랜지션 */
+    background-color: #fff;
+  }
+  .best5-button > a > h3 {
+    font-size: 15px;
+  }
+  .best5-button > a.active h3 {
+    background-color: #ff8000;
+    color: #fff;
+    opacity: 1; /* 가시성 */
+  }
+
+  .best5-button > a > h3::after {
+    opacity: 0; /* 기본 상태에서 가리기 */
+  }
+
+  .best5-button > a.active h3::after {
+    opacity: 0; /* 가시성 */
+    width: 40%; /* 너비 설정 */
+  }
+
+  .product-text > a > h3 {
+    height: 30px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 2줄로 제한 */
+    -webkit-box-orient: vertical;
+    white-space: normal; /* 줄바꿈이 가능하도록 설정 */
+    word-break: keep-all;
+  }
+  .product-text > a > p:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .best5-title {
+    font-size: 20px;
+  }
+  .best5-button > a > h3 {
+    font-size: 15px;
+  }
+
+  .product-icon {
+    width: 20px;
+    height: 50px;
+    gap: 5px;
+    flex-direction: column;
+    right: -15px;
+    bottom: -8px;
+  }
+  .cart-icon {
+    width: 100%;
+  }
+  .product-icon > div {
+    width: 100%;
+    display: block;
+  }
+  .best5slide:nth-child(1)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .best5slide:nth-child(2)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .best5slide:nth-child(3)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .best5slide:nth-child(4)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .best5slide:nth-child(5)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .product-text > a > h3 {
+    font-size: 15px;
+  }
+  .product-text > a > p:nth-child(3) {
+    font-size: 17px;
+  }
+}
+@media (max-width: 400px) {
+  .best5-button > a > h3 {
+    font-size: 20px;
+  }
+  .a-more-btn {
+    width: 120% !important;
+  }
+}

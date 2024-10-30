@@ -1,0 +1,669 @@
+@charset "utf-8";
+.popup-store {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 300px;
+}
+.popup-inner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 70%;
+}
+.popup-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  /* margin: 0 auto; */
+  text-align: center;
+  background-color: #ffb16c;
+  border-radius: 50%;
+  padding: 20px 0;
+}
+.popup-count p span {
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+.popup-title {
+  position: relative;
+  display: block;
+  font-weight: bold;
+}
+.popup-title h2 {
+  overflow-wrap: break-word;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.popup-title h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.popup-count p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.popup-img-intro {
+  width: 100%;
+  height: 26.66vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  /* max-height: 560px !important; */
+  margin-top: 30px;
+  cursor: pointer;
+  gap: 2%;
+}
+.left {
+  display: block;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  max-width: 560px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* background-color: rgb(255, 127, 238); */
+}
+.left img {
+  width: 150%;
+}
+.right {
+  width: 59%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.right > div {
+  overflow: hidden;
+  width: 100%;
+  height: calc(100% / 2);
+}
+.second-store,
+.third-store {
+  height: calc(100% / 2);
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+.third-store img,
+.second-store img {
+  width: 100%;
+}
+/* 호버 */
+.popup1-title-hover {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%; /* 사진 아래쪽에 위치 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  display: none;
+}
+.popup1-title-hover > ul > h4 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: #ff8f4e;
+}
+.popup1-title-hover > ul > li {
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+/* 첫번째 */
+.first-store:hover .popup1-title-hover {
+  display: block;
+}
+.first-store:hover .popup1-title {
+  display: none;
+}
+.first-store:hover h3 {
+  display: none;
+}
+/* 두번쨰 */
+.second-store:hover .popup1-title-hover {
+  display: block;
+}
+.second-store:hover .popup2-title {
+  display: none;
+}
+.second-store:hover h3 {
+  display: none;
+}
+/* 세번쨰 */
+.third-store:hover .popup1-title-hover {
+  display: block;
+}
+.third-store:hover .popup3-title {
+  display: none;
+}
+.third-store:hover h3 {
+  display: none;
+}
+/* 부모 요소에 position: relative 추가 */
+
+.second-store,
+.third-store {
+  position: relative;
+}
+
+/* 타이틀이 사진 위에 오도록 absolute로 설정 */
+.popup1-title,
+.popup2-title,
+.popup3-title {
+  width: 100%;
+  position: absolute;
+  top: 10px; /* 사진 아래쪽에 위치 */
+  left: 10px;
+  color: white; /* 글씨를 흰색으로 변경 */
+  z-index: 10; /* 이미지 위에 타이틀을 나타내기 위해 z-index 설정 */
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.first-store h3,
+.second-store h3,
+.third-store h3 {
+  position: absolute;
+  top: 50%; /* 사진 아래쪽에 위치 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: white; /* 글씨를 흰색으로 변경 */
+  z-index: 10; /* 이미지 위에 타이틀을 나타내기 위해 z-index 설정 */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* 타이틀 글자 크기 조절 */
+.popup1-title h2,
+.popup2-title h2,
+.popup3-title h2 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.first-store h3,
+.second-store h3,
+.third-store h3 {
+  font-size: 50px;
+}
+
+.popup1-title p,
+.popup2-title p,
+.popup3-title p {
+  font-size: 15px;
+}
+/* 900px 이하 */
+@media all and (max-width: 1000px) {
+  .popup-title h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+  .popup-title h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .popup1-title h2,
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 30px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    float: left;
+  }
+  .popup-count {
+    width: 230px;
+    height: 230px;
+  }
+  .popup-count p span {
+    font-size: 45px;
+    font-weight: 800;
+    color: rgb(255, 0, 0);
+  }
+  .popup-count p {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .first-store h3,
+  .second-store h3,
+  .third-store h3 {
+    font-size: 40px;
+  }
+  .second-store h3,
+  .third-store h3 {
+    top: 60%;
+  }
+  .popup1-title p,
+  .popup2-title p,
+  .popup3-title p {
+    font-size: 12px;
+  }
+  .popup1-title-hover > ul > h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .popup1-title-hover > ul > li {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+}
+@media all and (max-width: 900px) {
+  .popup-title h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .popup-title h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .popup1-title h2,
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 30px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    float: left;
+  }
+  .popup-count {
+    width: 180px;
+    height: 180px;
+  }
+  .popup-count p span {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(255, 0, 0);
+  }
+  .popup-count p {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .first-store h3,
+  .second-store h3,
+  .third-store h3 {
+    font-size: 40px;
+  }
+  .second-store h3,
+  .third-store h3 {
+    top: 60%;
+  }
+  .popup1-title p,
+  .popup2-title p,
+  .popup3-title p {
+    font-size: 12px;
+  }
+  .popup1-title-hover > ul > h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .popup1-title-hover > ul > li {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+}
+
+/* 768px 이하 */
+@media all and (max-width: 768px) {
+  .popup-title h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .popup-title h4 {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  .popup1-title h2,
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 25px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    float: left;
+  }
+  .popup-count {
+    width: 180px;
+    height: 180px;
+  }
+  .popup-count p span {
+    font-size: 37px;
+    font-weight: 800;
+    color: rgb(255, 0, 0);
+  }
+  .popup-count p {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .first-store h3,
+  .second-store h3,
+  .third-store h3 {
+    font-size: 35px;
+    padding: 0;
+  }
+  .popup1-title p,
+  .popup2-title p,
+  .popup3-title p {
+    font-size: 10px;
+  }
+  .popup1-title,
+  .popup2-title,
+  .popup3-title {
+    padding: 0px;
+  }
+  .popup1-title-hover > ul > h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .popup1-title-hover > ul > li {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .popup-img-intro {
+    height: 100%;
+    display: flex;
+  }
+  .popup-title h2 {
+    font-size: 24px;
+    height: 35px;
+  }
+  .popup-title h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .popup-count {
+    width: 170px;
+    height: 170px;
+    padding-top: 15px;
+  }
+  .popup-count p span {
+    font-size: 33px;
+  }
+  .popup-count p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .popup-img-intro {
+    display: block;
+  }
+  .left {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .right > div {
+    height: 200px;
+  }
+  .first-store,
+  .second-store,
+  .third-store {
+    height: 200px;
+  }
+  .right {
+    width: 100%;
+  }
+  .second-store {
+    margin-bottom: 5%;
+  }
+  .second-store h3,
+  .third-store h3 {
+    top: 50%;
+  }
+  .popup1-title-hover > ul > h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .popup1-title-hover > ul > li {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 450px) {
+  .popup-title h2 {
+    width: 50%;
+    font-size: 24px;
+  }
+  .popup-title h4 {
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+  .popup-count {
+    width: 130px;
+    height: 130px;
+    padding-top: 15px;
+  }
+  .popup-count p span {
+    font-size: 30px;
+  }
+  .popup-count p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .popup-img-intro {
+    flex-direction: column;
+    gap: 3%;
+    /* height: 2000px; */
+  }
+  .left {
+    width: 100%;
+    /* height: 650px; */
+  }
+  .first-store {
+    height: 100%;
+  }
+  .right {
+    width: 100%;
+    /* height: 1300px; */
+  }
+  .second-store h3,
+  .third-store h3 {
+    top: 50%;
+  }
+  .popup1-title-hover > ul > h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .popup1-title-hover > ul > li {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .right > div {
+    height: 150px;
+  }
+  .first-store,
+  .second-store,
+  .third-store {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .popup-title h2 {
+    width: 50%;
+    font-size: 24px;
+  }
+  .popup-title h4 {
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+  .popup-count {
+    width: 130px;
+    height: 130px;
+    padding-top: 15px;
+  }
+  .popup-count p span {
+    font-size: 30px;
+  }
+  .popup-count p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .popup-img-intro {
+    /* flex-direction: column; */
+    gap: 3%;
+    /* height: 2000px; */
+  }
+  .left {
+    width: 100%;
+    /* height: 650px; */
+  }
+  .first-store {
+    /* height: 100%; */
+  }
+  .right {
+    width: 100%;
+    /* height: 1300px; */
+  }
+
+  .second-store h3,
+  .third-store h3 {
+    top: 50%;
+  }
+  .popup1-title-hover > ul > h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .popup1-title-hover > ul > li {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .second-store {
+    z-index: 1;
+  }
+  .first-store,
+  .third-store {
+    z-index: 9999;
+  }
+}
+@media screen and (max-width: 360px) {
+  .popup-title h2 {
+    width: 50%;
+    height: 20px;
+    font-size: 21px;
+  }
+  .popup-title h4 {
+    font-size: 9px;
+    margin-bottom: 4px;
+  }
+  .popup-count {
+    width: 110px;
+    height: 110px;
+    padding-top: 12px;
+  }
+  .popup-count p {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+
+  .popup-count p span {
+    font-size: 22px;
+  }
+  .popup1-title h2,
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 22px;
+  }
+  .second-store {
+    z-index: 1;
+  }
+  .first-store,
+  .third-store {
+    z-index: 9999;
+  }
+}
+/* 320px 이하 */
+@media screen and (max-width: 320px) {
+  .popup-title h2 {
+    width: 50%;
+    height: 20px;
+    font-size: 20px;
+  }
+  .popup-title h4 {
+    font-size: 9px;
+    margin-bottom: 4px;
+  }
+  .popup-count {
+    width: 110px;
+    height: 110px;
+    padding-top: 12px;
+  }
+  .popup-count p {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+
+  .popup-count p span {
+    font-size: 22px;
+  }
+  .popup1-title h2,
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 22px;
+  }
+  .second-store {
+    background-color: aliceblue;
+  }
+  .second-store {
+    z-index: 1;
+  }
+  .first-store,
+  .third-store {
+    z-index: 9999;
+  }
+}
+@media screen and (max-width: 315px) {
+  .popup-title h2 {
+    width: 50%;
+    height: 20px;
+    font-size: 16px;
+  }
+  .popup-title h4 {
+    font-size: 9px;
+    margin-bottom: 4px;
+  }
+  .popup-count {
+    width: 110px;
+    height: 110px;
+    padding-top: 12px;
+  }
+  .popup-count p {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+
+  .popup-count p span {
+    font-size: 22px;
+  }
+  .popup1-title h2,
+  .popup2-title h2,
+  .popup3-title h2 {
+    font-size: 22px;
+  }
+}
