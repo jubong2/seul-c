@@ -25,7 +25,7 @@
     <meta name="author" content="슬기로운빵생활" />
     <meta property="og:title" content="슬기로운빵생활" />
     <meta property="og:description" content="전국 빵집 모음! " />
-    <meta property="og:image" content="https://seulppang-t7we.vercel.app/images/logo.png" />
+    <meta property="og:image" content="http://127.0.0.1:5500/images/logo.png" />
     <meta
       property="og:url"
       content="seul-c-jubong2s-projects.vercel.app
@@ -67,7 +67,6 @@
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- js -->
-
     <script src="js/loginpage.js"></script>
     <script src="js/subpage.js"></script>
     <script src="js/detailpage.js"></script>
@@ -77,6 +76,7 @@
     <script src="js/swiper.js"></script>
     <script src="js/minibanner.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/popupModal.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53RQ74E4K0"></script>
     <script>
@@ -90,6 +90,10 @@
     </script>
   </head>
   <body>
+    <!-- =========================================================== -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXNJDZBK" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- 팝업창 -->
     <div class="popup-overlay" id="popupOverlay" style="display: none">
       <div class="popup">
@@ -101,10 +105,6 @@
         </div>
       </div>
     </div>
-    <!-- =========================================================== -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXNJDZBK" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- 헤더 -->
     <div class="fix-menu">
       <ul class="fix-list">
@@ -791,7 +791,7 @@
                 </div>
               </div>
               <div class="sale-top-right">
-                <div><img src="images/sale-bottom.JPG" alt="" class="sale-img"/></div>
+                <div><img src="images/sale-bottom.JPG" alt="" class="sale-img" /></div>
                 <button>장바구니 담기</button>
                 <div class="sale-top-right-intro">
                   <p>가장 핫한 도넛 ! 올드페리를 집에서 즐겨보세요 ~</p>
@@ -936,6 +936,7 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination swpagination"></div>
             </div>
           </div>
         </div>
@@ -1034,7 +1035,6 @@
         </div>
       </section>
       <!-- 펫 추천 상품 -->
-
       <section class="pet-swiper">
         <div class="pet-warp">
           <div class="swipersection-title">
@@ -1154,6 +1154,7 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination swpagination"></div>
             </div>
           </div>
         </div>
