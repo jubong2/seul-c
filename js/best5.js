@@ -85,7 +85,7 @@ window.addEventListener("load", function () {
   const hearts = document.querySelectorAll(".heart-icon img");
   const carts = document.querySelectorAll(".cart-icon img");
 
-  hearts.forEach(function (heart) {
+  hearts.forEach(function (하트) {
     // 변수 이름 수정
     heart.addEventListener("click", function (event) {
       event.preventDefault();
