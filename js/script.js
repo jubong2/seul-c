@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loginLink = document.querySelector(".fix-login");
   const targetNameElement = document.querySelector(".taget-name"); // 오타 수정: 'taget-name' -> 'target-name'
   const logintext = document.querySelector(".logintext");
+  const loginicon = document.querySelectorAll(".loginpage");
 
   // 로컬 스토리지에서 username 가져오기
   const username = localStorage.getItem("username");
@@ -27,4 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("로그인이 필요합니다.");
     }
   });
+  // 로그인 아이콘 클릭 시 로그인 상태 확인 후 알림창 표시
+  loginicon.forEach(function (loginicon) {
+    loginicon.addEventListener("click", function (event) {
+      if (username) {
+        event.preventDefault();
+        alert("로그인 상태입니다.");
+      }
+    });
+  });
+  window.addEventListener("beforeunload", function () {});
 });
