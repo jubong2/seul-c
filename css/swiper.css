@@ -69,7 +69,22 @@
   margin: 0 auto;
   width: 70%;
 }
-.pet-text {
+.petfoot-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+}
+.petfoot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+.pet-img {
+  position: relative;
+}et-text {
   /* background-color: antiquewhite; */
 }
 .pet-img {
