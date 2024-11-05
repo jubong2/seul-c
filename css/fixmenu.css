@@ -79,7 +79,7 @@
 }
 @media (max-width: 1000px) {
   .fix-menu {
-    width: 60px;
+    /* width: 60px; */
   }
 }
 @media (max-width: 600px) {
