@@ -84,7 +84,8 @@
 
 .pet-img {
   position: relative;
-}et-text {
+}
+et-text {
   /* background-color: antiquewhite; */
 }
 .pet-img {
@@ -107,6 +108,9 @@
   width: 100%;
 }
 
+.productimg2 {
+
+}
 .ppang-button {
   position: absolute;
   z-index: 999;
