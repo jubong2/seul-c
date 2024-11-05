@@ -38,6 +38,7 @@
 
 /* 이미지 스타일 */
 .popup-image {
+  margin-top: 15px;
   width: 100%;
   height: auto;
 }
