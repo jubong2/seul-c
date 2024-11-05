@@ -10,6 +10,7 @@ window.addEventListener("load", function () {
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true, // 추가된 옵션
     },
     breakpoints: {
       1200: { slidesPerView: 3.5 },
@@ -29,6 +30,7 @@ window.addEventListener("load", function () {
     spaceBetween: 10,
     autoplay: {
       delay: 2500,
+      pauseOnMouseEnter: true, // 추가된 옵션
     },
     on: {
       loop: true, // 루프 활성화
@@ -44,6 +46,7 @@ window.addEventListener("load", function () {
     spaceBetween: 10,
     autoplay: {
       delay: 2500,
+      pauseOnMouseEnter: true, // 추가된 옵션
     },
     on: {
       loop: true, // 루프 활성화

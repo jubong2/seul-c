@@ -18,6 +18,7 @@ window.addEventListener("load", function () {
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true, // 추가된 옵션
     },
     breakpoints: {
       1200: { slidesPerView: 3.5 },
