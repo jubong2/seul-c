@@ -118,7 +118,8 @@
   font-weight: 600;
 }
 .option-box > #total-price {
-  font-size: 20px;
+  text-align: right;
+  font-size: 22px;
   font-weight: 700;
   color: #744729;
 }
@@ -328,7 +329,7 @@
 .review-item p {
   color: rgba(133, 83, 51, 0.8);
 }
-.review-item > .review-date{
+.review-item > .review-date {
   margin-bottom: 15px;
 }
 .review-item img {
@@ -483,7 +484,7 @@
   }
 }
 @media screen and (max-width: 1200px) {
-  .cart-btn > button{
+  .cart-btn > button {
     margin-top: 20px;
   }
 }
