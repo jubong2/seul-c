@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const loginLink = document.querySelector(".fix-login");
-  const targetNameElement = document.querySelector(".taget-name"); // 오타 수정: 'taget-name' -> 'target-name'
+  const targetNameElement = document.querySelector(".target-name"); // 오타 수정: 'taget-name' -> 'target-name'
   const logintext = document.querySelector(".logintext");
   const loginicon = document.querySelectorAll(".loginpage");
 
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     logintext.textContent = "로그아웃";
   } else {
     logintext.textContent = "로그인";
+    
   }
 
   loginLink.addEventListener("click", function (event) {
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       const logoutConfirm = confirm("로그아웃하시겠습니까?");
       if (logoutConfirm) {
-        targetNameElement.textContent = "";
+        targetNameElement.textContent = "회원";
         logintext.textContent = "로그인";
         localStorage.removeItem("username"); // 로컬 스토리지에서 username 제거
       }
